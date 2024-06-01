@@ -1,0 +1,440 @@
+/* ### Стили отображения тулбара версии для слабовидящих ### */
+
+/* переменные для некоторых стилей */
+:root {
+    --dark-bg-color: #1d2a35;
+    /*#0f0f0f; фон для темной темы */
+    --dark-font-color: #dddddd;
+    /* #f1f1f1; /*  /* цвет текста для темной темы */
+    --gray-bg-color: #e7e9eb;
+    /* фон для тулбара вдс, whitesmoke */
+}
+
+#idVisionToolbar {
+    background-color: var(--gray-bg-color);
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Times New Roman", Times, serif;
+    line-height: 24px;
+    letter-spacing: normal;
+    display: none;
+    /* flex */
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+#idVisionToolbarOnBtn {
+    background: #f4f4f4 url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxMCI+PHBhdGggZmlsbD0iIzMzMkMyOSIgZD0iTS4xNzggNS42Yy44MzQgMS4zMjQgMS45NTQgMi4zOSAzLjM2MiAzLjE5NEM0Ljk0OCA5LjU5OCA2LjQzNCAxMCA4IDEwYzEuNTY1IDAgMy4wNTItLjQgNC40Ni0xLjIwMiAxLjQwOC0uODAyIDIuNTI4LTEuODY4IDMuMzYtMy4yLjEyLS4yLjE4LS40LjE4LS41OThzLS4wNi0uMzk2LS4xOC0uNmMtLjgzMi0xLjMyNC0xLjk1Mi0yLjM5LTMuMzYtMy4xOTNDMTEuMDUyLjQwMiA5LjU2NSAwIDggMCA2LjQzNCAwIDQuOTQ4LjQwMiAzLjU0IDEuMjA3IDIuMTMyIDIuMDEgMS4wMTIgMy4wNzcuMTggNC40LjA2IDQuNjA1IDAgNC44MDQgMCA1cy4wNi4zOTcuMTc4LjZ6bTQuMzY3LTMuNjY0QzQuMTggMi41MzggNCAzLjE5IDQgMy44OWMwIDEuMDcuMzkgMS45ODUgMS4xNzQgMi43NDZDNS45NTcgNy4zOTYgNi45IDcuNzc4IDggNy43NzhjMS4xIDAgMi4wNDMtLjM4IDIuODI2LTEuMTQyQzExLjYxIDUuODc2IDEyIDQuOTYgMTIgMy44OWMwLS43LS4xODItMS4zNTItLjU0NS0xLjk1NCAxLjM2My42NzcgMi40OTcgMS42OTggMy40MDIgMy4wNjQtLjc5MiAxLjE4Ni0xLjc4NCAyLjEzLTIuOTc4IDIuODM0UzkuMzkyIDguODkgOCA4Ljg5Yy0xLjM5MyAwLTIuNjg2LS4zNTMtMy44OC0xLjA1NkMyLjkyOCA3LjEzIDEuOTM1IDYuMTg2IDEuMTQ0IDVjLjkwNC0xLjM2NiAyLjAzOC0yLjM4NyAzLjQwMi0zLjA2NHptMS41NC4wOUM2LjYxNyAxLjUxIDcuMjU1IDEuMjUgOCAxLjI1Yy4xMiAwIC4yMi4wNC4zMDQuMTIyLjA4My4wOC4xMjUuMTguMTI1LjI5NSAwIC4xMTYtLjA0My4yMTQtLjEyNi4yOTUtLjA4NC4wOC0uMTg1LjEyLS4zMDQuMTItLjUxMiAwLS45NS4xNzgtMS4zMTMuNTMtLjM2My4zNTQtLjU0NC43OC0uNTQ0IDEuMjc3IDAgLjExNS0uMDQyLjIxMy0uMTI1LjI5NC0uMDg0LjA4LS4xODUuMTIyLS4zMDQuMTIyLS4xMiAwLS4yMi0uMDQtLjMwMy0uMTIyLS4wODMtLjA4LS4xMjQtLjE4LS4xMjQtLjI5NSAwLS43MjQuMjY2LTEuMzQ1LjgtMS44NjN6Ii8+PC9zdmc+) 50% 50% no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    z-index: 10000;
+    xoutline: 1px solid black;
+    border-radius: 2px;
+}
+
+#idVisionToolbarOnBtn:hover {
+    background-color: white;
+}
+
+#idVisionToolbar button {
+    min-height: 24px;
+    min-width: 24px;
+    font-size: 1em;
+    line-height: 24px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+#idVisionToolbar button.active {
+    outline: 2px solid black;
+    border-radius: 2px;
+}
+
+#idVisionToolbar button:hover {
+    outline: 2px solid black;
+    border-radius: 2px;
+    background-color: white;
+}
+
+#idVisionToolbar .option {
+    display: inline-flex;
+    margin: 10px 5px;
+    font-size: 1em;
+    line-height: 24px;
+    background-color: var(--gray-bg-color);
+    color: black;
+    font-weight: 500;
+}
+
+#idVisionToolbar .caption {
+    display: inline-flex;
+    align-items: end;
+    margin: 0 5px;
+    font-size: 1em;
+    line-height: 24px;
+    background-color: var(--gray-bg-color);
+    color: black;
+    font-weight: 500;
+}
+
+#idVisionToolbar .buttons {
+    display: inline-flex;
+    align-items: end;
+    gap: 4px 4px;
+    font-size: 1em;
+    line-height: 24px;
+    background-color: var(--gray-bg-color);
+    color: black;
+    font-weight: 500;
+}
+
+#idVisionToolbar .xmark {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+
+/* Шрифт */
+#idFont1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+#idFont2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+}
+
+
+/* Размер шрифта */
+button#idFontSize1 {
+    font-size: 1em;
+}
+
+button#idFontSize2 {
+    font-size: 1.5em;
+    line-height: 36px;
+}
+
+button#idFontSize3 {
+    font-size: 2em;
+    line-height: 48px;
+}
+
+/* Межбуквенный интервал */
+#idLS1 {
+    letter-spacing: normal;
+    font-size: 1em;
+}
+
+#idLS2 {
+    letter-spacing: 0.5em;
+    font-size: 1em;
+}
+
+#idLS3 {
+    letter-spacing: 1em;
+    font-size: 1em;
+}
+
+/* Изображения */
+
+/* Тема оформления */
+#idTheme1 {
+    background-color: white;
+    color: black;
+    font-size: 1em;
+}
+
+#idTheme2 {
+    background-color: var(--dark-bg-color);
+    color: var(--dark-font-color);
+    font-size: 1em;
+}
+
+#idTheme2:hover {
+    background-color: black !important;
+}
+
+/* Закрыть ВДС */
+#idCloseBtn {}
+
+/* ### Специальные стили для избранных сайтов ### */
+
+/* Для главного сайта СФУ */
+
+
+html.sfuVisionToolbar.VisionToolbarShown body {
+    margin-top: 72px !important;
+}
+
+html.sfuVisionToolbar.VisionToolbarShown #idVisionToolbar {
+    position: absolute;
+    margin-top: -193px;
+}
+
+@media screen and (max-width: 1490px) {
+    html.sfuVisionToolbar.VisionToolbarShown body {
+        margin-top: 115px !important;
+    }
+
+    html.sfuVisionToolbar.VisionToolbarShown #idVisionToolbar {
+        position: absolute;
+        margin-top: -236px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html.sfuVisionToolbar.VisionToolbarShown body {
+        margin-top: 163px !important;
+    }
+
+    html.sfuVisionToolbar.VisionToolbarShown #idVisionToolbar {
+        position: absolute;
+        margin-top: -284px;
+    }
+}
+
+/*
+@media screen and (max-width: 414px) {
+    html.sfuVisionToolbar.VisionToolbarShown body {
+        margin-top: 262px !important;
+    }
+
+    html.sfuVisionToolbar.VisionToolbarShown #idVisionToolbar {
+        position: absolute;
+        margin-top: -384px;
+    }
+}*/
+
+@media screen and (max-width: 416px) {
+    html.sfuVisionToolbar.VisionToolbarShown body {
+        margin-top: 453px !important;
+    }
+
+    html.sfuVisionToolbar.VisionToolbarShown #idVisionToolbar {
+        position: absolute;
+        margin-top: -575px;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+
+    html.sfuVisionToolbar.VisionToolbarShown .option {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    html.sfuVisionToolbar.VisionToolbarShown .caption {
+        justify-content: center;
+    }
+
+    html.sfuVisionToolbar.VisionToolbarShown .buttons {
+        justify-content: center;
+    }
+}
+
+.sfuVisionToolbar #idVisionToolbarOnBtn {
+    top: 0px;
+    right: 160px;
+    width: 40px;
+    height: 40px;
+}
+
+.sfuVisionToolbar #idVisionToolbarOnBtn:hover {
+    background-color: #FF6400;
+}
+
+
+/* Для сайта ИВМ СО РАН */
+.icmVisionToolbar #idVisionToolbarOnBtn {
+    background-color: #55d1fa;
+    top: 32px;
+    right: 160px;
+}
+
+.icmVisionToolbar #idVisionToolbarOnBtn:hover {
+    background-color: #0996c7;
+}
+
+/* Для сайта math.sfu-kras.ru */
+.mathVisionToolbar #idVisionToolbarOnBtn {
+    top: 0px;
+    right: 160px;
+    width: 30px;
+    height: 30px;
+}
+
+.mathVisionToolbar #idVisionToolbarOnBtn:hover {
+    background-color: #fe7f2b;
+}
+
+/* ### Стили поведения версии для слабовидящих  ### */
+
+/* Размер шрифта */
+
+/* Нормальный шрифт */
+html.VisionToolbarShown.idFontSize1 {
+    font-size: 16px;
+}
+
+/* Увеличенный шрифт */
+html.VisionToolbarShown.idFontSize2 {
+    font-size: 24px;
+}
+
+/* Большой шрифт */
+html.VisionToolbarShown.idFontSize3 {
+    font-size: 32px;
+}
+
+html.VisionToolbarShown.idFontSize1 p,
+html.VisionToolbarShown.idFontSize2 p,
+html.VisionToolbarShown.idFontSize3 p,
+html.VisionToolbarShown.idFontSize1 div,
+html.VisionToolbarShown.idFontSize2 div,
+html.VisionToolbarShown.idFontSize3 div,
+html.VisionToolbarShown.idFontSize1 a,
+html.VisionToolbarShown.idFontSize2 a,
+html.VisionToolbarShown.idFontSize3 a,
+html.VisionToolbarShown.idFontSize1 td,
+html.VisionToolbarShown.idFontSize2 td,
+html.VisionToolbarShown.idFontSize3 td,
+html.VisionToolbarShown.idFontSize1 li,
+html.VisionToolbarShown.idFontSize2 li,
+html.VisionToolbarShown.idFontSize3 li {
+    font-size: 1rem;
+}
+
+html.VisionToolbarShown.idFontSize1 h1,
+html.VisionToolbarShown.idFontSize2 h1,
+html.VisionToolbarShown.idFontSize3 h1 {
+    font-size: 2rem;
+}
+
+html.VisionToolbarShown.idFontSize1 h2,
+html.VisionToolbarShown.idFontSize2 h2,
+html.VisionToolbarShown.idFontSize3 h2 {
+    font-size: 1.5rem;
+}
+
+html.VisionToolbarShown.idFontSize1 h3,
+html.VisionToolbarShown.idFontSize2 h3,
+html.VisionToolbarShown.idFontSize3 h3 {
+    font-size: 1.1875rem;
+}
+
+html.VisionToolbarShown.idFontSize1 h4,
+html.VisionToolbarShown.idFontSize2 h4,
+html.VisionToolbarShown.idFontSize3 h4 {
+    font-size: 1rem;
+}
+
+html.VisionToolbarShown.idFontSize1 h5,
+html.VisionToolbarShown.idFontSize2 h5,
+html.VisionToolbarShown.idFontSize3 h5 {
+    font-size: 0.875rem;
+}
+
+html.VisionToolbarShown.idFontSize1 h6,
+html.VisionToolbarShown.idFontSize2 h6,
+html.VisionToolbarShown.idFontSize3 h6 {
+    font-size: 0.75rem;
+}
+
+/* Шрифт */
+
+/* Без засечек */
+html.VisionToolbarShown.idFont1,
+html.VisionToolbarShown.idFont1 body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* С засечками */
+html.VisionToolbarShown.idFont2,
+html.VisionToolbarShown.idFont2 body {
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Межбуквенный интервал */
+/* Нормальный */
+html.VisionToolbarShown.idLS1,
+html.VisionToolbarShown.idLS1 body {
+    letter-spacing: normal;
+}
+
+/* Увеличенный  */
+html.VisionToolbarShown.idLS2,
+html.VisionToolbarShown.idLS2 body {
+    letter-spacing: 0.5em;
+}
+
+/* Большой  */
+html.VisionToolbarShown.idLS3,
+html.VisionToolbarShown.idLS3 body {
+    letter-spacing: 1em;
+}
+
+/* Изображения */
+
+/* Черно-белые картинки и видео ВК и rutube */
+html.VisionToolbarShown.idPictures1 img,
+html.VisionToolbarShown.idPictures1 iframe[src*="https://vk.com"],
+html.VisionToolbarShown.idPictures1 a[href*="https://rutube.ru"] {
+    filter: grayscale(100%);
+}
+
+/* Не показывать */
+html.VisionToolbarShown.idPictures2 img,
+html.VisionToolbarShown.idPictures2 iframe[src*="https://vk.com"],
+html.VisionToolbarShown.idPictures2 a[href*="https://rutube.ru"] {
+    display: none !important;
+}
+
+/* Тема оформления */
+
+/* Черный текст на белом фоне */
+html.VisionToolbarShown.idTheme1,
+html.VisionToolbarShown.idTheme1 body,
+html.VisionToolbarShown.idTheme1 p,
+html.VisionToolbarShown.idTheme1 div,
+html.VisionToolbarShown.idTheme1 table,
+html.VisionToolbarShown.idTheme1 th,
+html.VisionToolbarShown.idTheme1 td,
+html.VisionToolbarShown.idTheme1 a,
+html.VisionToolbarShown.idTheme1 blockquote,
+html.VisionToolbarShown.idTheme1 h1,
+html.VisionToolbarShown.idTheme1 h2,
+html.VisionToolbarShown.idTheme1 h3,
+html.VisionToolbarShown.idTheme1 h4,
+html.VisionToolbarShown.idTheme1 h5,
+html.VisionToolbarShown.idTheme1 h6 {
+    background-color: white;
+    color: black;
+}
+
+/* Белый текст на черном фоне */
+html.VisionToolbarShown.idTheme2,
+html.VisionToolbarShown.idTheme2 body,
+html.VisionToolbarShown.idTheme2 p,
+html.VisionToolbarShown.idTheme2 div,
+html.VisionToolbarShown.idTheme2 table,
+html.VisionToolbarShown.idTheme2 th,
+html.VisionToolbarShown.idTheme2 td,
+html.VisionToolbarShown.idTheme2 a,
+html.VisionToolbarShown.idTheme2 blockquote,
+html.VisionToolbarShown.idTheme2 h1,
+html.VisionToolbarShown.idTheme2 h2,
+html.VisionToolbarShown.idTheme2 h3,
+html.VisionToolbarShown.idTheme2 h4,
+html.VisionToolbarShown.idTheme2 h5,
+html.VisionToolbarShown.idTheme2 h6 {
+    background-color: var(--dark-bg-color);
+    color: var(--dark-font-color);
+}

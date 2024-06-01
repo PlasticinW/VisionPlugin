@@ -1,0 +1,93 @@
+/* Шрифт */
+
+html.VisionToolbarShown.idFont1
+h3.item-title {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+html.VisionToolbarShown.idFont1 span.title-text, 
+html.VisionToolbarShown.idFont1 span.item-title, 
+html.VisionToolbarShown.idFont1 span.title-more-text {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+html.VisionToolbarShown.idFont2
+h3.item-title {
+	font-family: 'Times New Roman', Times, serif;
+}
+
+html.VisionToolbarShown.idFont2 span.title-text, 
+html.VisionToolbarShown.idFont2 span.item-title, 
+html.VisionToolbarShown.idFont2 span.title-more-text {
+	font-family: 'Times New Roman', Times, serif;
+}
+
+/* Изображения */
+html.VisionToolbarShown.idPictures1 
+#home-twitter-items {
+	filter: grayscale(100%);
+}
+
+html.VisionToolbarShown.idPictures2
+#home-twitter-items {
+	display: none;
+}
+
+/* Тема */
+html.VisionToolbarShown.idTheme2
+#main-slider .signature-en {
+    background: #2f383f;
+}
+
+html.VisionToolbarShown.idTheme2
+#main-slider {
+ background-color: #1d2a35;
+}
+
+html.VisionToolbarShown.idTheme2
+#header .top-back:before {
+ background-color: #1d2a35;
+}
+
+html.VisionToolbarShown.idTheme2
+#main-menu a.item-link {
+	background: #2f383f;
+	color: white;
+}
+
+/* Размеры шрифтов */
+html.VisionToolbarShown.idFontSize2
+p.icon_text {
+	line-height: 22px;
+}
+
+html.VisionToolbarShown.idFontSize3
+p.icon_text {
+	line-height: 30px;
+}
+
+html.VisionToolbarShown.idFontSize3
+div.deckstop a.one_icon  {
+   margin-top: 0;
+   height: 89px;
+}
+
+html.VisionToolbarShown.idFontSize2
+#main-menu a.item-link {
+	font-size: 24px;
+}
+
+html.VisionToolbarShown.idFontSize2
+#main-menu {
+    height: 160px;
+    z-index: 10;
+}
+
+html.VisionToolbarShown.idFontSize2
+#main-menu ul.items {
+    display: flex;
+    flex-wrap: wrap;
+    height: 160px;
+}
+
+

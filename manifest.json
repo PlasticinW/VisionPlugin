@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "Другой взгляд",
+    "description": "Плагин для поддержки версии для слабовидящих на сайте",
+    "version": "1.0.1",
+    "action": {
+        "default_title": "Другой взгляд 1.0.1"
+    },
+    "icons": {
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "toolbar/visionToolbar.css",
+                "toolbar/visionToolbar.js"
+            ],
+            "matches": [
+                "*://*/*"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "service-worker.js",
+        "type": "module"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "tabs",
+        "activeTab",
+        "downloads"
+    ]
+}
