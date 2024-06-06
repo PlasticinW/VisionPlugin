@@ -24,9 +24,7 @@ class VisionEditor {
         <div id="idVisionEditorBody">
         </div>
     <div  id="idVisionEditorTextarea">
-        <textarea placeholder="Type some CSS to inject">
-
-        </textarea>
+        <textarea id="IDVblock" placeholder="Type some CSS to inject"></textarea>
     </div>
     <div id="idVisionEdotorTB2">
         <button id="idVEAddBtn">Добавить стиль</button>
@@ -93,7 +91,7 @@ class VisionEditor {
 
     AddStyle(style = null) {
         // если параметр style указан, то берем его, иначе берем из textarea
-        let _style = style == null ? document.getElementById("idVETextarea").value : style;
+        let _style = style == null ? document.getElementById("IDVblock").value : style;
         this.#styles.push(_style);
         let _num = this.#styles.length - 1;
         let _html = `<div class="VisionStyleItem">${_style}<button class="CloseStyleBtn" id="idCloseStyleBtn${_num}" title="Закрыть">&#10005;</button></div></div>`;

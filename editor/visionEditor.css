@@ -107,9 +107,6 @@
     #idVisionEditor {
         width: 350px;
     }
-    .idVisionEditorTextarea textarea{
-        height: 80px;
-    }
     #idVisionEdotorTB1{
         display: flex;
         font-size: 12px;
@@ -125,5 +122,8 @@
 @media screen and (max-height:844px) {
     #idVisionEditor {
         height: 300px;
+    }
+    #idVisionEditorTextarea textarea{
+        height: 80px;
     }
 }
