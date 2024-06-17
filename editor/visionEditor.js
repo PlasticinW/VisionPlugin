@@ -64,7 +64,10 @@ class VisionEditor {
         // навешиваем обработчик кнопки "Загрузить стили со страницы"
         _btn = document.getElementById('idVELoadExtraStylesBtn');
         _btn.addEventListener('click', () => this.LoadExtraStyles());
-             
+
+        // навешиваем обработчик кнопки "Проверить PDF на странице"
+        _btn = document.getElementById('idVECheckPdfsBtn');
+        _btn.addEventListener('click', () => this.CheckPDF());
     }
 
     Show() {
@@ -177,6 +180,18 @@ class VisionEditor {
                 });
             // открепляем файл со стилем со страницы, чтобы стили не мешали (todo: возможно нужно откреплять и в другой ситуации)
             document.querySelector('link[rel=stylesheet][href*="visionToolbarExtra"]').remove();
+        }
+    }
+
+    CheckPDF() {
+        var links = document.getElementsByTagName('a');
+        for (var i = 0; i < links.length; ++i){
+            let url = links[i].href;
+            extension = links[i].split('.').pop();
+            if (extension == 'pdf'){
+                // how to check, does text exist in PDF or no?
+                console.log(links[i]);
+            }
         }
     }
 
