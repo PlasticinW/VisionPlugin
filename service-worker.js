@@ -15,7 +15,7 @@ chrome.runtime.onMessage.addListener(
             sendResponse({ result: "Done" });
         }
         if (request.popupAction === "TurnEditorOn") {
-            // внедряем тулбар на страницу и только потом включаем
+            // внедряем едитор на страницу и только потом включаем
             InjectEditor().then(() => {
                 TurnEditorOn();
             });
